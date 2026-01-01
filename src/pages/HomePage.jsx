@@ -12,7 +12,7 @@ const HomePage = () => {
       subtitle: 'Physiotherapy Clinics',
       badge: '24/7',
       icon: Activity,
-      description: 'Expert physiotherapy services for pain relief, rehabilitation, and wellness. Personalized treatment plans to restore mobility and enhance your quality of life.',
+      description: 'Expert physiotherapy services for pain relief, rehabilitation, and wellness. Personalized treatment plans delivered by certified physiotherapists to restore mobility and enhance your quality of life.',
       url: PHYSIO_URL,
       available: true,
       bgColor: 'bg-primary-50',
@@ -23,10 +23,10 @@ const HomePage = () => {
     },
     {
       title: 'NovaCare™',
-      subtitle: 'General Medicine',
+      subtitle: 'General Medicine at Home',
       badge: '24/7',
       icon: Stethoscope,
-      description: 'Comprehensive general medicine care for all your health needs. Expert diagnosis and treatment from experienced physicians dedicated to your well-being.',
+      description: 'Comprehensive medical care at your doorstep. Our medical assistants visit with diagnostic equipment while physicians consult digitally for accurate diagnosis and treatment.',
       url: GENERAL_MEDICINE_URL,
       available: false,
       bgColor: 'bg-white',
@@ -38,10 +38,10 @@ const HomePage = () => {
   ];
 
   const features = [
-    { icon: Heart, title: 'Personalized Care', desc: 'Treatment plans tailored to you' },
-    { icon: Zap, title: 'Modern Equipment', desc: 'Latest therapy technology' },
-    { icon: Shield, title: 'Safe & Effective', desc: 'Evidence-based treatments' },
-    { icon: CheckCircle, title: 'Expert Team', desc: 'Certified specialists' },
+    { icon: Heart, title: 'Personalized Care', desc: 'Tailored treatment for your needs' },
+    { icon: Zap, title: 'Modern Facilities', desc: 'Advanced clinics & home tech' },
+    { icon: Shield, title: 'Expert Guidance', desc: 'Certified specialists always' },
+    { icon: CheckCircle, title: 'Flexible Options', desc: 'Clinic visits or home care' },
   ];
 
   return (
@@ -66,12 +66,11 @@ const HomePage = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-5 leading-tight">
                 Healthcare That
                 <br />
-                <span className="text-primary-600">Never Sleeps</span>
+                <span className="text-primary-600">Comes to You</span>
               </h1>
               
               <p className="text-base text-gray-600 mb-8 leading-relaxed">
-                At NovaCare™ 24/7, we provide personalized healthcare solutions to help you live healthier and pain-free. 
-                Our experienced specialists across physiotherapy and general medicine are dedicated to your well-being.
+                Experience comprehensive healthcare with NovaCare™ 24/7. From expert physiotherapy at our clinics to innovative home-based digital consultations for general medicine—bringing quality care wherever you need it.
               </p>
 
               {/* Info Pills */}
@@ -82,7 +81,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex items-center gap-2 bg-primary-50 text-primary-700 px-4 py-2 rounded-full">
                   <MapPin size={18} />
-                  <span className="font-medium">Multiple Locations</span>
+                  <span className="font-medium">Clinic & Home Care</span>
                 </div>
               </div>
             </div>
@@ -99,9 +98,9 @@ const HomePage = () => {
               <div className="w-12 h-12 border-2 border-white/30 flex items-center justify-center mb-4">
                 <Heart className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Personalized Care</h3>
+              <h3 className="text-lg font-semibold mb-2">Expert Care</h3>
               <p className="text-white/80 text-sm mb-4">
-                Treatment plans tailored to your specific needs and recovery goals.
+                Professional healthcare services tailored to your specific needs and preferences.
               </p>
               <a href={PHYSIO_URL} className="inline-flex items-center gap-1 text-sm border border-white/50 px-4 py-2 hover:bg-white/10 transition-colors">
                 Book Appointment
@@ -113,9 +112,9 @@ const HomePage = () => {
               <div className="w-12 h-12 border-2 border-white/30 flex items-center justify-center mb-4">
                 <Phone className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Emergency Care</h3>
+              <h3 className="text-lg font-semibold mb-2">24/7 Availability</h3>
               <p className="text-white/80 text-sm mb-4">
-                Quick response for urgent healthcare needs and consultations.
+                Round-the-clock home visits with real-time digital consultations from specialists.
               </p>
               <a href="tel:+914012345678" className="inline-flex items-center gap-1 text-sm border border-white/50 px-4 py-2 hover:bg-white/10 transition-colors">
                 +91 40 1234 5678
@@ -129,7 +128,7 @@ const HomePage = () => {
               </div>
               <h3 className="text-lg font-semibold mb-2">Easy Booking</h3>
               <p className="text-white/80 text-sm mb-4">
-                Schedule your appointment online at your convenience.
+                Schedule clinic appointments or home visits online at your convenience.
               </p>
               <a href={PHYSIO_URL} className="inline-flex items-center gap-1 text-sm border border-white/50 px-4 py-2 hover:bg-white/10 transition-colors">
                 Make An Appointment
@@ -176,8 +175,7 @@ const HomePage = () => {
                 Why Choose <span className="text-primary-600">NovaCare™ 24/7?</span>
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-base">
-                At NovaCare™ 24/7, we combine decades of expertise with compassionate care to deliver 
-                exceptional outcomes. Our holistic approach ensures every treatment is personalized to your unique needs.
+                At NovaCare™ 24/7, we offer the best of both worlds—expert physiotherapy at our state-of-the-art clinics and innovative home-based digital consultations for general medicine. Our hybrid approach combines convenience with clinical excellence, ensuring you receive the right care in the right setting.
               </p>
               
               {/* Feature Grid */}
