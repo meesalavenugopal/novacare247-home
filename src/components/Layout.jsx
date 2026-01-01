@@ -151,8 +151,8 @@ const Layout = ({ children }) => {
             <div>
               <h4 className="text-white font-semibold mb-6 text-sm uppercase tracking-wider">Contact Info</h4>
               <ul className="space-y-4 text-sm">
-                <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-gray-800 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-gray-800 flex items-center justify-center flex-shrink-0">
                     <MapPin size={16} className="text-primary-400" />
                   </div>
                   <span>Kukatpally, Hyderabad, Telangana 500072</span>
@@ -173,8 +173,8 @@ const Layout = ({ children }) => {
                     care@novacare247.com
                   </a>
                 </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-gray-800 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-gray-800 flex items-center justify-center flex-shrink-0">
                     <Clock size={16} className="text-primary-400" />
                   </div>
                   <span>Mon-Sun: 24/7 Available</span>

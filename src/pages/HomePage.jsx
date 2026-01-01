@@ -12,7 +12,7 @@ const HomePage = () => {
       subtitle: 'Physiotherapy Clinics',
       badge: '24/7',
       icon: Activity,
-      description: 'Expert physiotherapy services for pain relief, rehabilitation, and wellness',
+      description: 'Expert physiotherapy services for pain relief, rehabilitation, and wellness. Personalized treatment plans to restore mobility and enhance your quality of life.',
       url: PHYSIO_URL,
       available: true,
       bgColor: 'bg-primary-50',
@@ -26,7 +26,7 @@ const HomePage = () => {
       subtitle: 'General Medicine',
       badge: '24/7',
       icon: Stethoscope,
-      description: 'Comprehensive general medicine care for all your health needs',
+      description: 'Comprehensive general medicine care for all your health needs. Expert diagnosis and treatment from experienced physicians dedicated to your well-being.',
       url: GENERAL_MEDICINE_URL,
       available: false,
       bgColor: 'bg-white',
@@ -207,7 +207,7 @@ const HomePage = () => {
             <div className="flex flex-col gap-4">
               <div className="relative h-80 lg:h-96 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&q=80"
                   alt="Healthcare Excellence"
                   className="w-full h-full object-cover"
                 />
@@ -296,12 +296,12 @@ const HomePage = () => {
               Ready to Get Started?
             </h2>
             <p className="text-primary-100 mb-8">
-              Choose the healthcare service that fits your needs and take the first step towards better health.
+              Our dedicated team is here to support your wellness journey every day.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
                 href="tel:+914012345678" 
-                className="bg-white text-primary-600 hover:bg-primary-50 font-medium py-3 px-8 transition-colors flex items-center gap-2"
+                className="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-8 transition-colors flex items-center gap-2"
               >
                 <Phone size={18} />
                 Call Now
