@@ -107,27 +107,39 @@ const ContactPage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 via-white to-primary-50/30 py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-6">
-          <Link 
-            to="/" 
-            className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-8 font-medium"
-          >
-            <ArrowLeft size={20} />
-            Back to Home
-          </Link>
-          
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <MessageCircle size={18} />
-              Contact Us
+      <section className="relative min-h-[50vh] bg-gradient-to-r from-primary-50/80 via-white to-white overflow-hidden">
+        {/* Background Image - Right Side */}
+        <div className="absolute top-0 right-0 w-[55%] h-full hidden lg:block">
+          <img 
+            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200&q=80"
+            alt="Contact Us"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="min-h-[50vh] flex flex-col justify-center py-12">
+            <Link 
+              to="/" 
+              className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-8 font-medium w-fit"
+            >
+              <ArrowLeft size={20} />
+              Back to Home
+            </Link>
+            
+            <div className="max-w-2xl mx-auto text-center">
+              <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                <MessageCircle size={18} />
+                Contact Us
+              </div>
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-5 leading-tight">
+                Get in Touch
+              </h1>
+              <p className="text-base text-gray-600 leading-relaxed">
+                Have questions or need assistance? We're here to help. Reach out to us through any of the channels below.
+              </p>
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Get in Touch
-            </h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Have questions or need assistance? We're here to help. Reach out to us through any of the channels below.
-            </p>
           </div>
         </div>
       </section>
@@ -182,7 +194,7 @@ const ContactPage = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                      placeholder="John Doe"
+                      placeholder="Anil Reddy"
                     />
                   </div>
                   <div>
@@ -196,7 +208,7 @@ const ContactPage = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                      placeholder="john@example.com"
+                      placeholder="anil.reddy@example.com"
                     />
                   </div>
                 </div>
